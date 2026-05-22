@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumi Studio - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p { margin-bottom: 16px; color: #333; }
+        .subtitle { color: #86868b; font-size: 14px; margin-bottom: 32px; }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 24px;
+        }
+        .lang-switch a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .section { display: block; }
+        .section.hidden { display: none; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a onclick="switchLang('zh')">中文</a> | <a onclick="switchLang('en')">English</a>
+        </div>
+
+        <div id="zh" class="section">
+            <h1>隐私政策</h1>
+            <p class="subtitle">最后更新：2025 年 5 月 23 日</p>
+
+            <h2>概述</h2>
+            <p>Sumi Studio 是一款完全在本地运行的 macOS 图像处理软件。我们尊重并保护您的隐私。本应用不会收集、存储、传输或分享任何用户数据。</p>
+
+            <h2>数据收集</h2>
+            <p>Sumi Studio 不会收集任何个人信息或使用数据，包括但不限于：</p>
+            <ul>
+                <li>个人身份信息（姓名、邮箱、电话等）</li>
+                <li>设备信息</li>
+                <li>位置数据</li>
+                <li>使用行为或分析数据</li>
+                <li>您编辑的照片或图像内容</li>
+            </ul>
+
+            <h2>网络访问</h2>
+            <p>Sumi Studio 不需要网络连接即可运行。应用不会向任何服务器发送数据，也不会进行任何形式的网络通信。</p>
+
+            <h2>本地数据</h2>
+            <p>您的所有图像文件和编辑参数均保存在本地设备上，完全由您自己控制。应用不会将这些数据上传至任何云端服务。</p>
+
+            <h2>第三方服务</h2>
+            <p>Sumi Studio 不包含任何第三方分析工具、广告 SDK 或追踪代码。</p>
+
+            <h2>政策变更</h2>
+            <p>如果未来本政策有任何更新，我们将在此页面发布修改后的版本。</p>
+
+            <h2>联系方式</h2>
+            <p>如果您对本隐私政策有任何疑问，请通过 GitHub 联系我们：<a href="https://github.com/Reuben-Sun/Sumi-Studio">Sumi Studio</a></p>
+        </div>
+
+        <div id="en" class="section hidden">
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Last updated: May 23, 2025</p>
+
+            <h2>Overview</h2>
+            <p>Sumi Studio is a macOS image editing application that runs entirely offline. We respect and protect your privacy. This application does not collect, store, transmit, or share any user data.</p>
+
+            <h2>Data Collection</h2>
+            <p>Sumi Studio does not collect any personal information or usage data, including but not limited to:</p>
+            <ul>
+                <li>Personal identifiers (name, email, phone number, etc.)</li>
+                <li>Device information</li>
+                <li>Location data</li>
+                <li>Usage behavior or analytics</li>
+                <li>Your photos or image content</li>
+            </ul>
+
+            <h2>Network Access</h2>
+            <p>Sumi Studio does not require an internet connection to function. The application does not send data to any server or perform any network communication.</p>
+
+            <h2>Local Data</h2>
+            <p>All your image files and editing parameters are stored locally on your device, entirely under your control. The application does not upload any data to cloud services.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>Sumi Studio does not include any third-party analytics tools, advertising SDKs, or tracking code.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>If this policy is updated in the future, the revised version will be posted on this page.</p>
+
+            <h2>Contact</h2>
+            <p>If you have any questions about this privacy policy, please contact us via GitHub: <a href="https://github.com/Reuben-Sun/Sumi-Studio">Sumi Studio</a></p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('zh').className = lang === 'zh' ? 'section' : 'section hidden';
+            document.getElementById('en').className = lang === 'en' ? 'section' : 'section hidden';
+        }
+    </script>
+</body>
+</html>
